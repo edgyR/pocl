@@ -292,10 +292,10 @@ set_property(TEST
   "kernel/test_sizeof_uint"
   APPEND PROPERTY LABELS "cuda")
 
-if(LLVM_VERSION_MAJOR LESS 11)
-  set_property(TEST "kernel/test_rotate"
-               APPEND PROPERTY LABELS "cuda")
-endif()
+#if(LLVM_VERSION_MAJOR LESS 11)
+  #set_property(TEST "kernel/test_rotate"
+               #APPEND PROPERTY LABELS "cuda")
+#endif()
 endif()
 
 set_property(TEST
